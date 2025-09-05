@@ -3,15 +3,18 @@
 A simple, clean mobile app that fetches posts from the public JSONPlaceholder API and lets you **swipe right to Save** and **swipe left to Delete**. Built with **React Native + Expo** and **TypeScript**, using a lightweight service + context architecture.
 
 <p align="center">
-  <img src="./docs/screens/home.png" width="260" alt="Home screen" />
-  <img src="./docs/screens/swipe-save.png" width="260" alt="Swipe right to save" />
-  <img src="./docs/screens/swipe-delete.png" width="260" alt="Swipe left to delete" />
+  
+![IMG_3092](https://github.com/user-attachments/assets/428277cb-eb70-444e-ad4d-c30b253c8f90)
+![IMG_3091](https://github.com/user-attachments/assets/1b5448f0-9546-419d-bbf5-73476c070a2a)
+![IMG_3090](https://github.com/user-attachments/assets/075f3fb7-93ae-457e-8483-addd973b3195)
+![IMG_3089](https://github.com/user-attachments/assets/80be861b-318a-4bcf-b76c-1d6c0323c1f9)
+![IMG_3088](https://github.com/user-attachments/assets/dcca46a8-9a70-4169-bf46-1ed72e2724a0)
+
+
+
 </p>
 
-<p align="center">
-  <img src="./docs/screens/saved-empty.png" width="260" alt="Saved empty state" />
-  <img src="./docs/screens/saved-list.png" width="260" alt="Saved list screen" />
-</p>
+
 
 ---
 
@@ -71,10 +74,8 @@ SwipePostManager/
 ├─ app.json
 ├─ package.json
 ├─ tsconfig.json
-├─ assets/
-│  └─ images/
-│     └─ icon.png              # referenced from app.json (update path if needed)
-├─ docs/
+     
+├─ docs/ //TODO
 │  └─ screens/
 │     ├─ home.png
 │     ├─ swipe-save.png
@@ -83,23 +84,24 @@ SwipePostManager/
 │     └─ saved-list.png
 └─ src/
    ├─ api/
-   │  └─ postsApi.ts           # network calls (fetches Post[])
+   │  └─ postsApi.ts          
    ├─ Service/
-   │  └─ postsService.ts       # domain helpers (filtering, save/delete sets)
+   │  └─ postsService.ts       
    ├─ components/
-   │  └─ PostCard.tsx          # UI card for a single post
-   ├─ providers/
-   │  └─ PostsProvider.tsx     # Context: loading/error/posts/saved/deleted
+   │  └─ PostCard.tsx
+   |  └─ Swipe.tsx
+   ├─ context/
+   │  └─ PostsContext.tsx     
    ├─ screens/
-   │  ├─ HomeScreen.tsx        # list with swipe actions
-   │  └─ SavedScreen.tsx       # displays saved posts
+   │  ├─ HomeScreen.tsx        
+   │  └─ SavedScreen.tsx       
    ├─ navigation/
-   │  └─ RootNavigator.tsx     # bottom tabs: Home / Saved
+   │  └─ index.tsx     
    └─ types/
-      └─ post.ts               # Post model (userId, id, title, body)
+      └─ post.ts               
 
 ```
-### 📝 Original Assignment (Summary)
+### 📝 Summary
 Create a React Native app that:
 
 Fetches posts from https://jsonplaceholder.typicode.com/posts
@@ -113,7 +115,7 @@ Provides a separate Saved view
 Is clean, modular, and documented
 
 
-
+# Enjoy :grin:
 גגs
 
 
@@ -122,4 +124,4 @@ Is clean, modular, and documented
 
 
 
-📁 Project Structure
+
