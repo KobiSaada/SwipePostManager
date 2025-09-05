@@ -3,12 +3,28 @@
 A simple, clean mobile app that fetches posts from the public JSONPlaceholder API and lets you **swipe right to Save** and **swipe left to Delete**. Built with **React Native + Expo** and **TypeScript**, using a lightweight service + context architecture.
 
 <p align="center">
-  
-![IMG_3092](https://github.com/user-attachments/assets/428277cb-eb70-444e-ad4d-c30b253c8f90)
-![IMG_3091](https://github.com/user-attachments/assets/1b5448f0-9546-419d-bbf5-73476c070a2a)
-![IMG_3090](https://github.com/user-attachments/assets/075f3fb7-93ae-457e-8483-addd973b3195)
-![IMG_3089](https://github.com/user-attachments/assets/80be861b-318a-4bcf-b76c-1d6c0323c1f9)
-![IMG_3088](https://github.com/user-attachments/assets/dcca46a8-9a70-4169-bf46-1ed72e2724a0)
+  <!-- Screenshots -->
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/dcca46a8-9a70-4169-bf46-1ed72e2724a0">
+    <img src="https://github.com/user-attachments/assets/dcca46a8-9a70-4169-bf46-1ed72e2724a0" width="220" alt="Home" />
+  </a>
+  <a href="https://github.com/user-attachments/assets/80be861b-318a-4bcf-b76c-1d6c0323c1f9">
+    <img src="https://github.com/user-attachments/assets/80be861b-318a-4bcf-b76c-1d6c0323c1f9" width="220" alt="Swipe right to save" />
+  </a>
+  <a href="https://github.com/user-attachments/assets/075f3fb7-93ae-457e-8483-addd973b3195">
+    <img src="https://github.com/user-attachments/assets/075f3fb7-93ae-457e-8483-addd973b3195" width="220" alt="Swipe left to delete" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/1b5448f0-9546-419d-bbf5-73476c070a2a">
+    <img src="https://github.com/user-attachments/assets/1b5448f0-9546-419d-bbf5-73476c070a2a" width="220" alt="Saved empty state" />
+  </a>
+  <a href="https://github.com/user-attachments/assets/428277cb-eb70-444e-ad4d-c30b253c8f90">
+    <img src="https://github.com/user-attachments/assets/428277cb-eb70-444e-ad4d-c30b253c8f90" width="220" alt="Saved list" />
+  </a>
+</p>
+
 
 
 
