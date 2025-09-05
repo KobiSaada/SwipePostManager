@@ -118,18 +118,6 @@ SwipePostManager/
       └─ post.ts               
 
 ```
-### 📝 Summary
-Create a React Native app that:
-
-Fetches posts from https://jsonplaceholder.typicode.com/posts
-
-Displays them in a mobile-friendly list
-
-Supports swipe left to delete and swipe right to save
-
-Provides a separate Saved view
-
-Is clean, modular, and documented
 
 
 # Enjoy :grin:
