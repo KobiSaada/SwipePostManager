@@ -29,10 +29,7 @@ A simple, clean mobile app that fetches posts from the public JSONPlaceholder AP
 </p>
 
 
-
-
 </p>
-
 
 
 ---
@@ -55,7 +52,6 @@ A simple, clean mobile app that fetches posts from the public JSONPlaceholder AP
 - **react-native-gesture-handler** (swipe gestures)
 - **React Context** for lightweight state management
 
-No `dotenv` runtime in the client (Expo injects env vars at build time).
 
 ---
 
@@ -64,7 +60,7 @@ No `dotenv` runtime in the client (Expo injects env vars at build time).
 ### Prerequisites
 
 - Node.js ≥ 18
-- npm (or yarn/pnpm)
+- npm 
 - Expo CLI (`npx expo` is enough)
 - Expo Go app on your device or iOS/Android simulator
 
