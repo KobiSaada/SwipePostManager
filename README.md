@@ -40,12 +40,12 @@ A simple, clean mobile app that fetches posts from the public JSONPlaceholder AP
 ## ✨ Features
 
 - Fetch posts from `https://jsonplaceholder.typicode.com/posts`
-- Render posts in card-style UI (title + body, trimmed for readability)
+- Render posts in card-style UI 
 - **Swipe right → Save** the post to the Saved tab
 - **Swipe left → Delete** the post from the Home list
 - Saved/Deleted state persists for the current session
 - Clean architecture: `api → service → context → screens → components`
-- Type-safe models (`Post` type)
+- Type-safe models 
 
 ---
 
@@ -68,9 +68,11 @@ No `dotenv` runtime in the client (Expo injects env vars at build time).
 - Expo CLI (`npx expo` is enough)
 - Expo Go app on your device or iOS/Android simulator
 
-### 1) Install
+### 1) Clone & Install
 
 ```
+git clone https://github.com/KobiSaada/SwipePostManager.git
+cd SwipePostManager
 npm install
 ```
 ### 2) (Optional) Configure API URL via ENV
