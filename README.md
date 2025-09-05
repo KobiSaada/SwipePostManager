@@ -115,7 +115,10 @@ SwipePostManager/
    ├─ navigation/
    │  └─ index.tsx     
    └─ types/
-      └─ post.ts               
+   │  └─ post.ts
+   └─ App.jsx
+   │
+   └─ index.js         
 
 ```
 
