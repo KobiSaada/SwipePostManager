@@ -1,50 +1,125 @@
-# Welcome to your Expo app 👋
+# Swipe Post Manager (React Native / Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple, clean mobile app that fetches posts from the public JSONPlaceholder API and lets you **swipe right to Save** and **swipe left to Delete**. Built with **React Native + Expo** and **TypeScript**, using a lightweight service + context architecture.
 
-## Get started
+<p align="center">
+  <img src="./docs/screens/home.png" width="260" alt="Home screen" />
+  <img src="./docs/screens/swipe-save.png" width="260" alt="Swipe right to save" />
+  <img src="./docs/screens/swipe-delete.png" width="260" alt="Swipe left to delete" />
+</p>
 
-1. Install dependencies
+<p align="center">
+  <img src="./docs/screens/saved-empty.png" width="260" alt="Saved empty state" />
+  <img src="./docs/screens/saved-list.png" width="260" alt="Saved list screen" />
+</p>
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## ✨ Features
 
-   ```bash
-   npx expo start
-   ```
+- Fetch posts from `https://jsonplaceholder.typicode.com/posts`
+- Render posts in card-style UI (title + body, trimmed for readability)
+- **Swipe right → Save** the post to the Saved tab
+- **Swipe left → Delete** the post from the Home list
+- Saved/Deleted state persists for the current session
+- Clean architecture: `api → service → context → screens → components`
+- Type-safe models (`Post` type)
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 📦 Tech Stack
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- **React Native** (Expo, TypeScript)
+- **react-native-gesture-handler** (swipe gestures)
+- **React Context** for lightweight state management
 
-## Get a fresh project
+No `dotenv` runtime in the client (Expo injects env vars at build time).
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
+## 🛠️ Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 18
+- npm (or yarn/pnpm)
+- Expo CLI (`npx expo` is enough)
+- Expo Go app on your device or iOS/Android simulator
+
+### 1) Install
+
 ```
+npm install
+```
+### 2) (Optional) Configure API URL via ENV
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Expo reads public env vars that start with EXPO_PUBLIC_.
 
-## Learn more
+Create .env in the project root:
 
-To learn more about developing your project with Expo, look at the following resources:
+```
+EXPO_PUBLIC_API_URL=https://jsonplaceholder.typicode.com
+```
+### 3) Run
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```
+npx expo start -c
+```
+### 📁 Project Structure
+```
+SwipePostManager/
+├─ app.json
+├─ package.json
+├─ tsconfig.json
+├─ assets/
+│  └─ images/
+│     └─ icon.png              # referenced from app.json (update path if needed)
+├─ docs/
+│  └─ screens/
+│     ├─ home.png
+│     ├─ swipe-save.png
+│     ├─ swipe-delete.png
+│     ├─ saved-empty.png
+│     └─ saved-list.png
+└─ src/
+   ├─ api/
+   │  └─ postsApi.ts           # network calls (fetches Post[])
+   ├─ Service/
+   │  └─ postsService.ts       # domain helpers (filtering, save/delete sets)
+   ├─ components/
+   │  └─ PostCard.tsx          # UI card for a single post
+   ├─ providers/
+   │  └─ PostsProvider.tsx     # Context: loading/error/posts/saved/deleted
+   ├─ screens/
+   │  ├─ HomeScreen.tsx        # list with swipe actions
+   │  └─ SavedScreen.tsx       # displays saved posts
+   ├─ navigation/
+   │  └─ RootNavigator.tsx     # bottom tabs: Home / Saved
+   └─ types/
+      └─ post.ts               # Post model (userId, id, title, body)
 
-## Join the community
+```
+### 📝 Original Assignment (Summary)
+Create a React Native app that:
 
-Join our community of developers creating universal apps.
+Fetches posts from https://jsonplaceholder.typicode.com/posts
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Displays them in a mobile-friendly list
+
+Supports swipe left to delete and swipe right to save
+
+Provides a separate Saved view
+
+Is clean, modular, and documented
+
+
+
+גגs
+
+
+
+
+
+
+
+📁 Project Structure
