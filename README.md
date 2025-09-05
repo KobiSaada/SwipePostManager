@@ -2,6 +2,9 @@
 
 A simple, clean mobile app that fetches posts from the public JSONPlaceholder API and lets you **swipe right to Save** and **swipe left to Delete**. Built with **React Native + Expo** and **TypeScript**, using a lightweight service + context architecture.
 
+
+### Screenshots 
+
 <p align="center">
   <!-- Screenshots -->
 <p align="center">
