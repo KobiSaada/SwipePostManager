@@ -80,7 +80,7 @@ Expo reads public env vars that start with EXPO_PUBLIC_.
 Create .env in the project root:
 
 ```
-EXPO_PUBLIC_API_URL=https://jsonplaceholder.typicode.com
+API_URL=https://jsonplaceholder.typicode.com
 ```
 ### 3) Run
 
